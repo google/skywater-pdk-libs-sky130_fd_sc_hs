@@ -23,15 +23,11 @@ UNITS
   DATABASE MICRONS 200 ;
 END UNITS
 MACRO sky130_fd_sc_hs__fill_diode_4
-  CLASS CORE ;
-  SOURCE USER ;
+  CLASS BLOCK ;
   FOREIGN sky130_fd_sc_hs__fill_diode_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.920000 BY  3.330000 ;
-  SYMMETRY X Y ;
-  SITE unit ;
   PIN VGND
-    DIRECTION INOUT ;
     USE GROUND ;
     PORT
       LAYER li1 ;
@@ -47,7 +43,6 @@ MACRO sky130_fd_sc_hs__fill_diode_4
     END
   END VGND
   PIN VPWR
-    DIRECTION INOUT ;
     USE POWER ;
     PORT
       LAYER li1 ;
