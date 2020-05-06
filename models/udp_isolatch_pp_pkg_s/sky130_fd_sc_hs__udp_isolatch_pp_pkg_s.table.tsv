@@ -1,0 +1,18 @@
+D	SLEEP_B	KAPWR	VGND	VPWR	:	Qtn	:	Qtn+1	Comments
+*	0	1	0	1	:	?	:	-	
+?	(?0)	1	0	1	:	?	:	-	
+?	(1x)	1	0	1	:	?	:	-	
+0	(0x)	1	0	1	:	0	:	0	
+1	(0x)	1	0	1	:	1	:	1	
+0	(x1)	1	0	1	:	?	:	0	
+1	(x1)	1	0	1	:	?	:	1	
+(?0)	1	1	0	1	:	?	:	0	
+(?1)	1	1	0	1	:	?	:	1	
+0	(01)	1	0	1	:	?	:	0	
+1	(01)	1	0	1	:	?	:	1	
+(?1)	x	1	0	1	:	1	:	1	Reducing pessimism.
+(?0)	x	1	0	1	:	0	:	0	
+?	1	1	0	*	:	?	:	x	any change on vpwr when not in sleep mode
+?	x	1	0	*	:	?	:	x	any change on vpwr when not in sleep mode
+?	?	*	?	1	:	?	:	x	any change on kapwr
+?	?	?	*	1	:	?	:	x	any change on vgnd

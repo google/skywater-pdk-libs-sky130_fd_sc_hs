@@ -1,0 +1,21 @@
+* NGSPICE file created from sky130_fd_sc_hs__ebufn_1.ext - technology: sky130A
+
+.subckt sky130_fd_sc_hs__ebufn_1 A TE_B VGND VNB VPB VPWR Z
+M1000 a_229_74# A VPWR VPB pshort w=840000u l=150000u
++  ad=2.562e+11p pd=2.29e+06u as=7.861e+11p ps=5.87e+06u
+M1001 Z a_229_74# a_566_368# VPB pshort w=1.12e+06u l=150000u
++  ad=3.304e+11p pd=2.83e+06u as=3.024e+11p ps=2.78e+06u
+M1002 VPWR TE_B a_27_404# VPB pshort w=840000u l=150000u
++  ad=0p pd=0u as=2.478e+11p ps=2.27e+06u
+M1003 a_229_74# A VGND VNB nlowvt w=550000u l=150000u
++  ad=1.4575e+11p pd=1.63e+06u as=3.759e+11p ps=3.75e+06u
+M1004 a_569_74# a_27_404# VGND VNB nlowvt w=740000u l=150000u
++  ad=1.776e+11p pd=1.96e+06u as=0p ps=0u
+M1005 Z a_229_74# a_569_74# VNB nlowvt w=740000u l=150000u
++  ad=2.109e+11p pd=2.05e+06u as=0p ps=0u
+M1006 a_566_368# TE_B VPWR VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1007 VGND TE_B a_27_404# VNB nlowvt w=550000u l=150000u
++  ad=0p pd=0u as=1.5675e+11p ps=1.67e+06u
+.ends
+

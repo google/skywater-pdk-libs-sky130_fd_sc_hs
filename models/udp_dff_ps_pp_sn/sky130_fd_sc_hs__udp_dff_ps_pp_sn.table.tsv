@@ -1,0 +1,23 @@
+D	CLK	SET	SLEEP_B	NOTIFIER	:	Qt	:	Qt+1	Comments
+?	?	?	0	?	:	?	:	-	Retain state during sleep
+?	?	?	(01)	?	:	?	:	-	Retain state during sleep
+1	(01)	0	1	?	:	?	:	1	clocked data
+0	(01)	0	1	?	:	?	:	0	
+1	(01)	x	1	?	:	?	:	1	reducing pessimism
+1	?	x	1	?	:	1	:	1	pessimism
+0	0	x	1	?	:	1	:	1	pessimism
+0	x	(?x)	1	?	:	1	:	1	pessimism
+0	1	(?x)	1	?	:	1	:	1	pessimism
+x	0	x	1	?	:	1	:	1	pessimism
+x	x	(?x)	1	?	:	1	:	1	pessimism
+x	1	(?x)	1	?	:	1	:	1	pessimism
+1	(x1)	0	1	?	:	1	:	1	reducing pessimism
+0	(x1)	0	1	?	:	0	:	0	
+1	(0x)	0	1	?	:	1	:	1	
+0	(0x)	0	1	?	:	0	:	0	
+?	?	1	1	?	:	?	:	1	asynchronous preset
+?	(?0)	?	1	?	:	?	:	-	ignore falling clock
+?	(1x)	?	1	?	:	?	:	-	ignore falling clock
+*	?	?	1	?	:	?	:	-	ignore the data edges
+?	?	(?0)	1	?	:	?	:	-	ignore the edges on set
+?	?	?	1	*	:	?	:	x	

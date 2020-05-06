@@ -1,0 +1,45 @@
+* NGSPICE file created from sky130_fd_sc_hs__nor4bb_2.ext - technology: sky130A
+
+.subckt sky130_fd_sc_hs__nor4bb_2 A B C_N D_N VGND VNB VPB VPWR Y
+M1000 VGND A Y VNB nlowvt w=740000u l=150000u
++  ad=2.32715e+12p pd=1.585e+07u as=8.621e+11p ps=8.25e+06u
+M1001 Y B VGND VNB nlowvt w=740000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1002 Y a_311_124# VGND VNB nlowvt w=740000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1003 VGND a_27_392# Y VNB nlowvt w=740000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1004 a_311_124# D_N VGND VNB nlowvt w=640000u l=150000u
++  ad=2.496e+11p pd=2.06e+06u as=0p ps=0u
+M1005 VPWR C_N a_27_392# VPB pshort w=1e+06u l=150000u
++  ad=1.506e+12p pd=7.18e+06u as=2.95e+11p ps=2.59e+06u
+M1006 a_772_368# B a_985_368# VPB pshort w=1.12e+06u l=150000u
++  ad=7.28e+11p pd=5.78e+06u as=1.0528e+12p ps=8.6e+06u
+M1007 Y A VGND VNB nlowvt w=740000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1008 VPWR A a_985_368# VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1009 a_985_368# B a_772_368# VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1010 a_985_368# A VPWR VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1011 VGND B Y VNB nlowvt w=740000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1012 Y a_311_124# a_493_368# VPB pshort w=1.12e+06u l=150000u
++  ad=3.36e+11p pd=2.84e+06u as=1.0528e+12p ps=8.6e+06u
+M1013 a_493_368# a_27_392# a_772_368# VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1014 a_772_368# a_27_392# a_493_368# VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1015 VGND a_311_124# Y VNB nlowvt w=740000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1016 a_493_368# a_311_124# Y VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1017 Y a_27_392# VGND VNB nlowvt w=740000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1018 a_311_124# D_N VPWR VPB pshort w=1e+06u l=150000u
++  ad=2.95e+11p pd=2.59e+06u as=0p ps=0u
+M1019 VGND C_N a_27_392# VNB nlowvt w=640000u l=150000u
++  ad=0p pd=0u as=1.824e+11p ps=1.85e+06u
+.ends
+

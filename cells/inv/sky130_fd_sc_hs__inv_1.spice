@@ -1,0 +1,9 @@
+* NGSPICE file created from sky130_fd_sc_hs__inv_1.ext - technology: sky130A
+
+.subckt sky130_fd_sc_hs__inv_1 A VGND VNB VPB VPWR Y
+M1000 Y A VPWR VPB pshort w=1.12e+06u l=150000u
++  ad=3.304e+11p pd=2.83e+06u as=3.864e+11p ps=2.93e+06u
+M1001 Y A VGND VNB nlowvt w=740000u l=150000u
++  ad=2.109e+11p pd=2.05e+06u as=2.627e+11p ps=2.19e+06u
+.ends
+

@@ -1,0 +1,26 @@
+D	GATE	RESET	SLEEP_B	NOTIFIER	:	Qt	:	Qt+1	Comments
+?	?	?	0	?	:	?	:	-	Retain state during sleep
+?	?	?	(01)	?	:	?	:	-	Retain state during sleep
+*	0	0	1	?	:	?	:	-	
+?	?	1	1	?	:	?	:	0	asynchro clear
+?	(?0)	0	1	?	:	?	:	-	Changed R=? to R=0
+?	(1x)	0	1	?	:	?	:	-	Changed R=? to R=0
+0	(0x)	0	1	?	:	0	:	0	
+1	(0x)	0	1	?	:	1	:	1	
+0	(x1)	0	1	?	:	?	:	0	
+1	(x1)	0	1	?	:	?	:	1	
+(?0)	1	0	1	?	:	?	:	0	
+(?1)	1	0	1	?	:	?	:	1	
+0	(01)	0	1	?	:	?	:	0	
+1	(01)	0	1	?	:	?	:	1	
+?	0	(?x)	1	?	:	0	:	0	Reducing pessimism.//AB
+*	0	x	1	?	:	0	:	0	Reducing pessimism//AB
+0	(?1)	x	1	?	:	?	:	0	Reducing pessimism.
+(?0)	1	x	1	?	:	?	:	0	Reducing pessimism.
+0	1	(?x)	1	?	:	?	:	0	Reducing pessimism.//AB
+?	0	(?0)	1	?	:	?	:	-	ignore edge on clear
+0	1	(?0)	1	?	:	?	:	0	pessimism .
+1	1	(?0)	1	?	:	?	:	1	
+(?1)	x	0	1	?	:	1	:	1	Reducing pessimism.
+(?0)	x	0	1	?	:	0	:	0	Reducing pessimism.
+?	?	?	1	*	:	?	:	x	

@@ -1,0 +1,25 @@
+* NGSPICE file created from sky130_fd_sc_hs__nand4b_1.ext - technology: sky130A
+
+.subckt sky130_fd_sc_hs__nand4b_1 A_N B C D VGND VNB VPB VPWR Y
+M1000 a_443_74# B a_341_74# VNB nlowvt w=740000u l=150000u
++  ad=2.886e+11p pd=2.26e+06u as=2.664e+11p ps=2.2e+06u
+M1001 Y B VPWR VPB pshort w=1.12e+06u l=150000u
++  ad=6.72e+11p pd=5.68e+06u as=1.3188e+12p ps=9.12e+06u
+M1002 Y D VPWR VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1003 Y a_27_112# a_443_74# VNB nlowvt w=740000u l=150000u
++  ad=3.404e+11p pd=2.4e+06u as=0p ps=0u
+M1004 VPWR C Y VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1005 VPWR a_27_112# Y VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1006 VGND A_N a_27_112# VNB nlowvt w=550000u l=150000u
++  ad=2.696e+11p pd=2.26e+06u as=2.695e+11p ps=2.08e+06u
+M1007 VPWR A_N a_27_112# VPB pshort w=840000u l=150000u
++  ad=0p pd=0u as=2.478e+11p ps=2.27e+06u
+M1008 a_263_74# D VGND VNB nlowvt w=740000u l=150000u
++  ad=1.776e+11p pd=1.96e+06u as=0p ps=0u
+M1009 a_341_74# C a_263_74# VNB nlowvt w=740000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+.ends
+

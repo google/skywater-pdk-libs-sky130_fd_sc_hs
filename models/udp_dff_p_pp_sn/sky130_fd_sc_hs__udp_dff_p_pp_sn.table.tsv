@@ -1,0 +1,15 @@
+D	CLK	SLEEP_B	NOTIFIER	:	Qt	:	Qt+1	Comments
+?	?	0	?	:	?	:	-	Retain state during sleep
+?	0	r	?	:	?	:	-	Retain state exiting sleep
+?	1	*	?	:	?	:	x	SLEEPB cannot change unless CLK is low
+?	x	*	?	:	?	:	x	SLEEPB cannot change unless CLK is low
+1	r	1	?	:	?	:	1	clocked data
+0	r	1	?	:	?	:	0	
+1	(x1)	1	?	:	1	:	1	reducing pessimism
+0	(x1)	1	?	:	0	:	0	
+1	(0x)	1	?	:	1	:	1	
+0	(0x)	1	?	:	0	:	0	
+?	(1x)	1	?	:	?	:	-	no change on falling edge
+?	(?0)	1	?	:	?	:	-	
+*	?	?	?	:	?	:	-	ignore edges on data
+?	?	1	*	:	?	:	x	any change on notifier

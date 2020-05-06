@@ -1,0 +1,14 @@
+D	CLK	DATA_EN	VPWR	VGND	:	Qt	:	Qt+1	Comments
+?	?	0	1	0	:	?	:	-	no change when disabled
+?	?	(01)	1	0	:	?	:	-	no change when disabled
+1	(01)	1	1	0	:	?	:	1	clocked data
+0	(01)	1	1	0	:	?	:	0	
+1	(x1)	1	1	0	:	1	:	1	reducing pessimism
+0	(x1)	1	1	0	:	0	:	0	
+1	(0x)	1	1	0	:	1	:	1	
+0	(0x)	1	1	0	:	0	:	0	
+?	(1x)	1	1	0	:	?	:	-	no change on falling edge
+?	(?0)	1	1	0	:	?	:	-	
+*	?	1	1	0	:	?	:	-	ignore edges on data
+?	?	?	*	?	:	?	:	x	any change on vpwr
+?	?	?	?	*	:	?	:	x	any change on vgnd

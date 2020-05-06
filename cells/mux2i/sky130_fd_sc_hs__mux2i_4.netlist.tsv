@@ -1,0 +1,12 @@
+sky130_fd_sc_hs__mux2i_4	A0:I A1:I S:I VGND:I VNB:I VPB:I VPWR:I Y:O
+Name	Formula	nd	ng	ns	nb	mname	m	w	l	mult	sa	sb	sd	topography	area	perim
+MMNA00	MOSFET	Y	A0	smdNA0	VNB	nlowvt	4	0.74	0.15	1	0.265	0.265	0.28	normal	0.063	1.14
+MMNA01	MOSFET	smdNA0	Sb	VGND	VNB	nlowvt	4	0.74	0.15	1	0.265	0.265	0.28	normal	0.063	1.14
+MMNA10	MOSFET	Y	A1	sndNA1	VNB	nlowvt	4	0.74	0.15	1	0.265	0.265	0.28	normal	0.063	1.14
+MMNA11	MOSFET	sndNA1	S	VGND	VNB	nlowvt	4	0.74	0.15	1	0.265	0.265	0.28	normal	0.063	1.14
+MMIN1	MOSFET	Sb	S	VGND	VNB	nlowvt	1	0.74	0.15	1	0.265	0.265	0.28	normal	0.063	1.14
+MMPA00	MOSFET	VPWR	S	sndPS	VPB	pshort	4	1.12	0.15	1	0.265	0.265	0.28	normal	0.063	1.14
+MMPA01	MOSFET	sndPS	A0	Y	VPB	pshort	4	1.12	0.15	1	0.265	0.265	0.28	normal	0.063	1.14
+MMPA10	MOSFET	VPWR	Sb	sndPSb	VPB	pshort	4	1.12	0.15	1	0.265	0.265	0.28	normal	0.063	1.14
+MMPA11	MOSFET	sndPSb	A1	Y	VPB	pshort	4	1.12	0.15	1	0.265	0.265	0.28	normal	0.063	1.14
+MMIP1	MOSFET	Sb	S	VPWR	VPB	pshort	2	0.84	0.15	1	0.265	0.265	0.28	normal	0.063	1.14

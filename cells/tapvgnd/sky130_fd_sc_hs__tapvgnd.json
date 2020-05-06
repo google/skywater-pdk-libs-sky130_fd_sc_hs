@@ -1,0 +1,39 @@
+{
+  "creator": "Yosys 0.9+2406 (git sha1 46ed0db2, clang 7.0.1-8 -fPIC -Os)",
+  "modules": {
+    "sky130_fd_sc_hs__tapvgnd": {
+      "attributes": {
+        "blackbox": 1,
+        "src": "./cells/tapvgnd/sky130_fd_sc_hs__tapvgnd.functional.v:34.1-43.10"
+      },
+      "ports": {
+        "VGND": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "VPWR": {
+          "direction": "input",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "VGND": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "./cells/tapvgnd/sky130_fd_sc_hs__tapvgnd.functional.v:40.11-40.15"
+          }
+        },
+        "VPWR": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "./cells/tapvgnd/sky130_fd_sc_hs__tapvgnd.functional.v:41.11-41.15"
+          }
+        }
+      }
+    }
+  }
+}

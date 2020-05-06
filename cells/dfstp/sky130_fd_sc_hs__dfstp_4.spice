@@ -1,0 +1,83 @@
+* NGSPICE file created from sky130_fd_sc_hs__dfstp_4.ext - technology: sky130A
+
+.subckt sky130_fd_sc_hs__dfstp_4 CLK D SET_B VGND VNB VPB VPWR Q
+M1000 VGND a_1321_392# a_1940_74# VNB nlowvt w=740000u l=150000u
++  ad=2.1906e+12p pd=1.727e+07u as=2.627e+11p ps=2.19e+06u
+M1001 a_398_74# a_225_74# VPWR VPB pshort w=1.12e+06u l=150000u
++  ad=3.304e+11p pd=2.83e+06u as=2.7038e+12p ps=2.352e+07u
+M1002 VGND a_767_402# a_732_74# VNB nlowvt w=420000u l=150000u
++  ad=0p pd=0u as=1.008e+11p ps=1.32e+06u
+M1003 VPWR a_1940_74# Q VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=6.72e+11p ps=5.68e+06u
+M1004 VGND SET_B a_1514_88# VNB nlowvt w=420000u l=150000u
++  ad=0p pd=0u as=1.008e+11p ps=1.32e+06u
+M1005 a_1484_62# a_1321_392# VGND VNB nlowvt w=420000u l=150000u
++  ad=1.197e+11p pd=1.41e+06u as=0p ps=0u
+M1006 a_1321_392# a_398_74# a_1225_74# VNB nlowvt w=640000u l=150000u
++  ad=2.1145e+11p pd=2e+06u as=2.528e+11p ps=2.07e+06u
+M1007 a_1514_88# a_1484_62# a_1436_88# VNB nlowvt w=420000u l=150000u
++  ad=0p pd=0u as=1.008e+11p ps=1.32e+06u
+M1008 Q a_1940_74# VGND VNB nlowvt w=740000u l=150000u
++  ad=4.477e+11p pd=4.17e+06u as=0p ps=0u
+M1009 VPWR D a_27_74# VPB pshort w=420000u l=150000u
++  ad=0p pd=0u as=2.478e+11p ps=2.86e+06u
+M1010 Q a_1940_74# VPWR VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1011 VGND a_1940_74# Q VNB nlowvt w=740000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1012 VPWR a_1940_74# Q VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1013 a_767_402# a_612_74# VPWR VPB pshort w=420000u l=150000u
++  ad=1.26e+11p pd=1.44e+06u as=0p ps=0u
+M1014 a_716_463# a_225_74# a_612_74# VPB pshort w=420000u l=150000u
++  ad=1.134e+11p pd=1.38e+06u as=1.47e+11p ps=1.54e+06u
+M1015 a_612_74# a_398_74# a_27_74# VPB pshort w=420000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1016 a_1321_392# a_225_74# a_1220_347# VPB pshort w=1e+06u l=150000u
++  ad=5.488e+11p pd=4.68e+06u as=3.94375e+11p ps=3.16e+06u
+M1017 a_732_74# a_398_74# a_612_74# VNB nlowvt w=420000u l=150000u
++  ad=0p pd=0u as=1.89e+11p ps=1.74e+06u
+M1018 a_1436_88# a_225_74# a_1321_392# VNB nlowvt w=420000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1019 a_1220_347# a_612_74# VPWR VPB pshort w=1e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1020 VGND SET_B a_1035_118# VNB nlowvt w=420000u l=150000u
++  ad=0p pd=0u as=1.008e+11p ps=1.32e+06u
+M1021 VGND a_1940_74# Q VNB nlowvt w=740000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1022 VPWR SET_B a_767_402# VPB pshort w=420000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1023 a_398_74# a_225_74# VGND VNB nlowvt w=740000u l=150000u
++  ad=2.109e+11p pd=2.05e+06u as=0p ps=0u
+M1024 a_1480_508# a_398_74# a_1321_392# VPB pshort w=420000u l=150000u
++  ad=1.134e+11p pd=1.38e+06u as=0p ps=0u
+M1025 a_1484_62# a_1321_392# VPWR VPB pshort w=420000u l=150000u
++  ad=1.155e+11p pd=1.39e+06u as=0p ps=0u
+M1026 a_612_74# a_225_74# a_27_74# VNB nlowvt w=420000u l=150000u
++  ad=0p pd=0u as=3.0635e+11p ps=3.21e+06u
+M1027 VPWR a_1484_62# a_1480_508# VPB pshort w=420000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1028 a_1035_118# a_612_74# a_767_402# VNB nlowvt w=420000u l=150000u
++  ad=0p pd=0u as=1.491e+11p ps=1.55e+06u
+M1029 a_1321_392# SET_B VPWR VPB pshort w=420000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1030 a_1225_74# a_612_74# VGND VNB nlowvt w=640000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1031 VPWR a_767_402# a_716_463# VPB pshort w=420000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1032 a_1940_74# a_1321_392# VPWR VPB pshort w=840000u l=150000u
++  ad=2.52e+11p pd=2.28e+06u as=0p ps=0u
+M1033 VGND D a_27_74# VNB nlowvt w=420000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1034 VPWR a_1321_392# a_1940_74# VPB pshort w=840000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1035 Q a_1940_74# VPWR VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1036 Q a_1940_74# VGND VNB nlowvt w=740000u l=150000u
++  ad=0p pd=0u as=0p ps=0u
+M1037 VGND CLK a_225_74# VNB nlowvt w=740000u l=150000u
++  ad=0p pd=0u as=2.109e+11p ps=2.05e+06u
+M1038 VPWR CLK a_225_74# VPB pshort w=1.12e+06u l=150000u
++  ad=0p pd=0u as=3.304e+11p ps=2.83e+06u
+.ends
+

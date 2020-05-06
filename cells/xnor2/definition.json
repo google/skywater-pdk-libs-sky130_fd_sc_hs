@@ -1,0 +1,42 @@
+{
+ "description": "2-input exclusive NOR.",
+ "equation": "Y = !(A ^ B)",
+ "file_prefix": "sky130_fd_sc_hs__xnor2",
+ "library": "sky130_fd_sc_hs",
+ "name": "xnor2",
+ "parameters": [],
+ "ports": [
+  [
+   "signal",
+   "Y",
+   "output",
+   ""
+  ],
+  [
+   "signal",
+   "A",
+   "input",
+   ""
+  ],
+  [
+   "signal",
+   "B",
+   "input",
+   ""
+  ],
+  [
+   "power",
+   "VPWR",
+   "input",
+   "supply1"
+  ],
+  [
+   "power",
+   "VGND",
+   "input",
+   "supply0"
+  ]
+ ],
+ "type": "cell",
+ "verilog_name": "sky130_fd_sc_hs__xnor2"
+}

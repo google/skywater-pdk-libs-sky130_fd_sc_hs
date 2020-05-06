@@ -1,0 +1,47 @@
+{
+ "description": "Power isolating latch. Includes VPWR, KAPWR, and VGND power pins with active low sleep pin (SLEEP_B).",
+ "file_prefix": "sky130_fd_sc_hs__udp_isolatch_pp_pkg_s",
+ "library": "sky130_fd_sc_hs",
+ "name": "udp_isolatch_pp$PKG$s",
+ "parameters": [],
+ "ports": [
+  [
+   "signal",
+   "Q",
+   "output",
+   ""
+  ],
+  [
+   "signal",
+   "D",
+   "input",
+   ""
+  ],
+  [
+   "signal",
+   "SLEEP_B",
+   "input",
+   ""
+  ],
+  [
+   "signal",
+   "KAPWR",
+   "input",
+   ""
+  ],
+  [
+   "power",
+   "VGND",
+   "input",
+   "supply0"
+  ],
+  [
+   "power",
+   "VPWR",
+   "input",
+   "supply1"
+  ]
+ ],
+ "type": "primitive",
+ "verilog_name": "sky130_fd_sc_hs__udp_isolatch_pp$PKG$s"
+}

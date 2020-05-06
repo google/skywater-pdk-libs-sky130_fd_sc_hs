@@ -1,0 +1,11 @@
+D	CLK	DATA_EN	NOTIFIER	VPWR	VGND	:	Qt	:	Qt+1	Comments
+?	?	0	?	1	0	:	?	:	-	no change when disabled
+?	?	r	?	1	0	:	?	:	-	no change when disabled
+1	r	1	?	1	0	:	?	:	1	clocked data
+0	r	1	?	1	0	:	?	:	0	clocked data
+1	*	1	?	1	0	:	1	:	1	reducing pessimism
+0	*	1	?	1	0	:	0	:	0	reducing pessimism
+?	f	1	?	1	0	:	?	:	-	no change on falling edge
+?	?	1	*	1	0	:	?	:	x	any notifier changed
+?	?	?	?	*	?	:	?	:	x	any change on vpwr
+?	?	?	?	?	*	:	?	:	x	any change on vgnd
