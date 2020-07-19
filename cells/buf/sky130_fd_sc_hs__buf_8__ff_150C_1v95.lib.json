@@ -1,6 +1,6 @@
 {
   "area": 19.1808,
-  "cell_footprint": "buf",
+  "cell_footprint": "sky130_fd_sc_hs__buf",
   "cell_leakage_power": 10461.06467,
   "leakage_power": [
     {
@@ -12,23 +12,23 @@
       "when": "A"
     }
   ],
-  "pg_pin VGND": {
+  "pg_pin,VGND": {
     "pg_type": "primary_ground",
     "voltage_name": "VGND"
   },
-  "pg_pin VNB": {
+  "pg_pin,VNB": {
     "pg_type": "primary_ground",
     "voltage_name": "VNB"
   },
-  "pg_pin VPB": {
+  "pg_pin,VPB": {
     "pg_type": "primary_power",
     "voltage_name": "VPB"
   },
-  "pg_pin VPWR": {
+  "pg_pin,VPWR": {
     "pg_type": "primary_power",
     "voltage_name": "VPWR"
   },
-  "pin A": {
+  "pin,A": {
     "capacitance": 0.0084,
     "clock": "false",
     "direction": "input",
@@ -36,11 +36,11 @@
     "related_ground_pin": "VGND",
     "related_power_pin": "VPWR"
   },
-  "pin X": {
+  "pin,X": {
     "direction": "output",
     "function": "(A)",
     "internal_power": {
-      "fall_power pwr_template13x11": {
+      "fall_power,pwr_template13x11": {
         "index_1": [
           0.01,
           0.01735,
@@ -242,7 +242,7 @@
         ]
       },
       "related_pin": "A",
-      "rise_power pwr_template13x11": {
+      "rise_power,pwr_template13x11": {
         "index_1": [
           0.01,
           0.01735,
@@ -449,7 +449,7 @@
     "related_ground_pin": "VGND",
     "related_power_pin": "VPWR",
     "timing": {
-      "cell_fall delay_template13x11": {
+      "cell_fall,delay_template13x11": {
         "index_1": [
           0.01,
           0.01735,
@@ -650,7 +650,7 @@
           ]
         ]
       },
-      "cell_rise delay_template13x11": {
+      "cell_rise,delay_template13x11": {
         "index_1": [
           0.01,
           0.01735,
@@ -851,7 +851,7 @@
           ]
         ]
       },
-      "fall_transition delay_template13x11": {
+      "fall_transition,delay_template13x11": {
         "index_1": [
           0.01,
           0.01735,
@@ -1053,7 +1053,7 @@
         ]
       },
       "related_pin": "A",
-      "rise_transition delay_template13x11": {
+      "rise_transition,delay_template13x11": {
         "index_1": [
           0.01,
           0.01735,
