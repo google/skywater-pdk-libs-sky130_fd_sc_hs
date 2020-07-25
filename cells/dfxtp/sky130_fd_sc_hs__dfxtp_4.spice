@@ -1,4 +1,19 @@
-* NGSPICE file created from sky130_fd_sc_hs__dfxtp_4.ext - technology: sky130A
+* Copyright 2020 The SkyWater PDK Authors
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     https://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+* SPDX-License-Identifier: Apache-2.0
+
 
 .subckt sky130_fd_sc_hs__dfxtp_4 CLK D VGND VNB VPB VPWR Q
 M1000 VGND a_1226_296# Q VNB nlowvt w=740000u l=150000u
@@ -64,4 +79,3 @@ M1029 VPWR a_1034_424# a_1226_296# VPB pshort w=840000u l=150000u
 M1030 a_1178_124# a_27_74# a_1034_424# VNB nlowvt w=420000u l=150000u
 +  ad=0p pd=0u as=0p ps=0u
 .ends
-
