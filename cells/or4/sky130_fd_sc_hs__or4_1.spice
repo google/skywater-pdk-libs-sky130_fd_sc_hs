@@ -1,39 +1,54 @@
-* Copyright 2020 The SkyWater PDK Authors
+* File: sky130_fd_sc_hs__or4_1.spice
+* Created: Thu Aug 27 21:06:37 2020
+* Program "Calibre xRC"
+* Version "v2018.4_34.26"
+* 
+.include "sky130_fd_sc_hs__or4_1.pex.spice"
+.subckt sky130_fd_sc_hs__or4_1  VNB VPB D C B A VPWR X VGND
+* 
+* VGND	VGND
+* X	X
+* VPWR	VPWR
+* A	A
+* B	B
+* C	C
+* D	D
+* VPB	VPB
+* VNB	VNB
+MM1005 N_A_44_392#_M1005_d N_D_M1005_g N_VGND_M1005_s VNB NLOWVT L=0.15 W=0.55
++ AD=0.077 AS=0.19525 PD=0.83 PS=1.81 NRD=0 NRS=0 M=1 R=3.66667 SA=75000.3
++ SB=75002.5 A=0.0825 P=1.4 MULT=1
+MM1004 N_VGND_M1004_d N_C_M1004_g N_A_44_392#_M1005_d VNB NLOWVT L=0.15 W=0.55
++ AD=0.1674 AS=0.077 PD=1.165 PS=0.83 NRD=32.724 NRS=0 M=1 R=3.66667 SA=75000.7
++ SB=75002 A=0.0825 P=1.4 MULT=1
+MM1007 N_A_44_392#_M1007_d N_B_M1007_g N_VGND_M1004_d VNB NLOWVT L=0.15 W=0.55
++ AD=0.121 AS=0.1674 PD=0.99 PS=1.165 NRD=17.448 NRS=33.816 M=1 R=3.66667
++ SA=75001.4 SB=75001.3 A=0.0825 P=1.4 MULT=1
+MM1006 N_VGND_M1006_d N_A_M1006_g N_A_44_392#_M1007_d VNB NLOWVT L=0.15 W=0.55
++ AD=0.107506 AS=0.121 PD=0.937984 PS=0.99 NRD=17.448 NRS=17.448 M=1 R=3.66667
++ SA=75002 SB=75000.7 A=0.0825 P=1.4 MULT=1
+MM1009 N_X_M1009_d N_A_44_392#_M1009_g N_VGND_M1006_d VNB NLOWVT L=0.15 W=0.74
++ AD=0.2109 AS=0.144644 PD=2.05 PS=1.26202 NRD=0 NRS=0 M=1 R=4.93333 SA=75001.9
++ SB=75000.2 A=0.111 P=1.78 MULT=1
+MM1008 A_133_392# N_D_M1008_g N_A_44_392#_M1008_s VPB PSHORT L=0.15 W=1 AD=0.135
++ AS=0.295 PD=1.27 PS=2.59 NRD=15.7403 NRS=1.9503 M=1 R=6.66667 SA=75000.2
++ SB=75002.5 A=0.15 P=2.3 MULT=1
+MM1000 A_217_392# N_C_M1000_g A_133_392# VPB PSHORT L=0.15 W=1 AD=0.21 AS=0.135
++ PD=1.42 PS=1.27 NRD=30.5153 NRS=15.7403 M=1 R=6.66667 SA=75000.6 SB=75002
++ A=0.15 P=2.3 MULT=1
+MM1002 A_331_392# N_B_M1002_g A_217_392# VPB PSHORT L=0.15 W=1 AD=0.21 AS=0.21
++ PD=1.42 PS=1.42 NRD=30.5153 NRS=30.5153 M=1 R=6.66667 SA=75001.2 SB=75001.5
++ A=0.15 P=2.3 MULT=1
+MM1001 N_VPWR_M1001_d N_A_M1001_g A_331_392# VPB PSHORT L=0.15 W=1 AD=0.269717
++ AS=0.21 PD=1.56604 PS=1.42 NRD=1.9503 NRS=30.5153 M=1 R=6.66667 SA=75001.8
++ SB=75000.9 A=0.15 P=2.3 MULT=1
+MM1003 N_X_M1003_d N_A_44_392#_M1003_g N_VPWR_M1001_d VPB PSHORT L=0.15 W=1.12
++ AD=0.3304 AS=0.302083 PD=2.83 PS=1.75396 NRD=1.7533 NRS=43.9704 M=1 R=7.46667
++ SA=75002.2 SB=75000.2 A=0.168 P=2.54 MULT=1
+DX10_noxref VNB VPB NWDIODE A=6.9564 P=11.2
 *
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
+.include "sky130_fd_sc_hs__or4_1.pxi.spice"
 *
-*     https://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*
-* SPDX-License-Identifier: Apache-2.0
-
-
-.subckt sky130_fd_sc_hs__or4_1 A B C D VGND VNB VPB VPWR X
-M1000 a_217_392# C a_133_392# VPB pshort w=1e+06u l=150000u
-+  ad=4.2e+11p pd=2.84e+06u as=2.7e+11p ps=2.54e+06u
-M1001 VPWR A a_331_392# VPB pshort w=1e+06u l=150000u
-+  ad=5.718e+11p pd=3.32e+06u as=4.2e+11p ps=2.84e+06u
-M1002 a_331_392# B a_217_392# VPB pshort w=1e+06u l=150000u
-+  ad=0p pd=0u as=0p ps=0u
-M1003 X a_44_392# VPWR VPB pshort w=1.12e+06u l=150000u
-+  ad=3.304e+11p pd=2.83e+06u as=0p ps=0u
-M1004 VGND C a_44_392# VNB nlowvt w=550000u l=150000u
-+  ad=7.822e+11p pd=6.34e+06u as=3.96e+11p ps=3.64e+06u
-M1005 a_44_392# D VGND VNB nlowvt w=550000u l=150000u
-+  ad=0p pd=0u as=0p ps=0u
-M1006 VGND A a_44_392# VNB nlowvt w=550000u l=150000u
-+  ad=0p pd=0u as=0p ps=0u
-M1007 a_44_392# B VGND VNB nlowvt w=550000u l=150000u
-+  ad=0p pd=0u as=0p ps=0u
-M1008 a_133_392# D a_44_392# VPB pshort w=1e+06u l=150000u
-+  ad=0p pd=0u as=2.95e+11p ps=2.59e+06u
-M1009 X a_44_392# VGND VNB nlowvt w=740000u l=150000u
-+  ad=2.109e+11p pd=2.05e+06u as=0p ps=0u
 .ends
+*
+*

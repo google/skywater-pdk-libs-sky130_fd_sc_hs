@@ -1,39 +1,55 @@
-* Copyright 2020 The SkyWater PDK Authors
+* File: sky130_fd_sc_hs__a221oi_1.spice
+* Created: Thu Aug 27 20:25:56 2020
+* Program "Calibre xRC"
+* Version "v2018.4_34.26"
+* 
+.include "sky130_fd_sc_hs__a221oi_1.pex.spice"
+.subckt sky130_fd_sc_hs__a221oi_1  VNB VPB C1 B2 B1 A1 A2 Y VPWR VGND
+* 
+* VGND	VGND
+* VPWR	VPWR
+* Y	Y
+* A2	A2
+* A1	A1
+* B1	B1
+* B2	B2
+* C1	C1
+* VPB	VPB
+* VNB	VNB
+MM1002 N_VGND_M1002_d N_C1_M1002_g N_Y_M1002_s VNB NLOWVT L=0.15 W=0.74
++ AD=0.1443 AS=0.4477 PD=1.13 PS=2.69 NRD=14.592 NRS=0 M=1 R=4.93333 SA=75000.5
++ SB=75002.2 A=0.111 P=1.78 MULT=1
+MM1007 A_351_74# N_B2_M1007_g N_VGND_M1002_d VNB NLOWVT L=0.15 W=0.74 AD=0.0777
++ AS=0.1443 PD=0.95 PS=1.13 NRD=8.1 NRS=3.24 M=1 R=4.93333 SA=75001.1 SB=75001.6
++ A=0.111 P=1.78 MULT=1
+MM1001 N_Y_M1001_d N_B1_M1001_g A_351_74# VNB NLOWVT L=0.15 W=0.74 AD=0.2109
++ AS=0.0777 PD=1.31 PS=0.95 NRD=19.452 NRS=8.1 M=1 R=4.93333 SA=75001.4
++ SB=75001.3 A=0.111 P=1.78 MULT=1
+MM1003 A_567_74# N_A1_M1003_g N_Y_M1001_d VNB NLOWVT L=0.15 W=0.74 AD=0.0777
++ AS=0.2109 PD=0.95 PS=1.31 NRD=8.1 NRS=27.564 M=1 R=4.93333 SA=75002.1
++ SB=75000.6 A=0.111 P=1.78 MULT=1
+MM1004 N_VGND_M1004_d N_A2_M1004_g A_567_74# VNB NLOWVT L=0.15 W=0.74 AD=0.1961
++ AS=0.0777 PD=2.01 PS=0.95 NRD=0 NRS=8.1 M=1 R=4.93333 SA=75002.5 SB=75000.2
++ A=0.111 P=1.78 MULT=1
+MM1000 N_A_118_368#_M1000_d N_C1_M1000_g N_Y_M1000_s VPB PSHORT L=0.15 W=1.12
++ AD=0.308 AS=0.308 PD=2.79 PS=2.79 NRD=1.7533 NRS=1.7533 M=1 R=7.46667
++ SA=75000.2 SB=75000.2 A=0.168 P=2.54 MULT=1
+MM1005 N_A_118_368#_M1005_d N_B2_M1005_g N_A_263_368#_M1005_s VPB PSHORT L=0.15
++ W=1.12 AD=0.168 AS=0.308 PD=1.42 PS=2.79 NRD=1.7533 NRS=1.7533 M=1 R=7.46667
++ SA=75000.2 SB=75001.7 A=0.168 P=2.54 MULT=1
+MM1008 N_A_263_368#_M1008_d N_B1_M1008_g N_A_118_368#_M1005_d VPB PSHORT L=0.15
++ W=1.12 AD=0.1848 AS=0.168 PD=1.45 PS=1.42 NRD=1.7533 NRS=1.7533 M=1 R=7.46667
++ SA=75000.6 SB=75001.2 A=0.168 P=2.54 MULT=1
+MM1006 N_VPWR_M1006_d N_A1_M1006_g N_A_263_368#_M1008_d VPB PSHORT L=0.15 W=1.12
++ AD=0.2184 AS=0.1848 PD=1.51 PS=1.45 NRD=7.0329 NRS=7.0329 M=1 R=7.46667
++ SA=75001.1 SB=75000.7 A=0.168 P=2.54 MULT=1
+MM1009 N_A_263_368#_M1009_d N_A2_M1009_g N_VPWR_M1006_d VPB PSHORT L=0.15 W=1.12
++ AD=0.308 AS=0.2184 PD=2.79 PS=1.51 NRD=1.7533 NRS=12.2928 M=1 R=7.46667
++ SA=75001.7 SB=75000.2 A=0.168 P=2.54 MULT=1
+DX10_noxref VNB VPB NWDIODE A=7.8492 P=12.16
 *
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
+.include "sky130_fd_sc_hs__a221oi_1.pxi.spice"
 *
-*     https://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*
-* SPDX-License-Identifier: Apache-2.0
-
-
-.subckt sky130_fd_sc_hs__a221oi_1 A1 A2 B1 B2 C1 VGND VNB VPB VPWR Y
-M1000 a_118_368# C1 Y VPB pshort w=1.12e+06u l=150000u
-+  ad=6.44e+11p pd=5.63e+06u as=3.08e+11p ps=2.79e+06u
-M1001 Y B1 a_351_74# VNB nlowvt w=740000u l=150000u
-+  ad=8.695e+11p pd=5.31e+06u as=1.554e+11p ps=1.9e+06u
-M1002 VGND C1 Y VNB nlowvt w=740000u l=150000u
-+  ad=4.847e+11p pd=4.27e+06u as=0p ps=0u
-M1003 a_567_74# A1 Y VNB nlowvt w=740000u l=150000u
-+  ad=1.554e+11p pd=1.9e+06u as=0p ps=0u
-M1004 VGND A2 a_567_74# VNB nlowvt w=740000u l=150000u
-+  ad=0p pd=0u as=0p ps=0u
-M1005 a_118_368# B2 a_263_368# VPB pshort w=1.12e+06u l=150000u
-+  ad=0p pd=0u as=9.856e+11p ps=8.48e+06u
-M1006 VPWR A1 a_263_368# VPB pshort w=1.12e+06u l=150000u
-+  ad=4.368e+11p pd=3.02e+06u as=0p ps=0u
-M1007 a_351_74# B2 VGND VNB nlowvt w=740000u l=150000u
-+  ad=0p pd=0u as=0p ps=0u
-M1008 a_263_368# B1 a_118_368# VPB pshort w=1.12e+06u l=150000u
-+  ad=0p pd=0u as=0p ps=0u
-M1009 a_263_368# A2 VPWR VPB pshort w=1.12e+06u l=150000u
-+  ad=0p pd=0u as=0p ps=0u
 .ends
+*
+*

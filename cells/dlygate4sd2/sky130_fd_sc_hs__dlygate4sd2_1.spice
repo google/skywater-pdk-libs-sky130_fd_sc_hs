@@ -1,35 +1,45 @@
-* Copyright 2020 The SkyWater PDK Authors
+* File: sky130_fd_sc_hs__dlygate4sd2_1.spice
+* Created: Thu Aug 27 20:43:17 2020
+* Program "Calibre xRC"
+* Version "v2018.4_34.26"
+* 
+.include "sky130_fd_sc_hs__dlygate4sd2_1.pex.spice"
+.subckt sky130_fd_sc_hs__dlygate4sd2_1  VNB VPB A VPWR X VGND
+* 
+* VGND	VGND
+* X	X
+* VPWR	VPWR
+* A	A
+* VPB	VPB
+* VNB	VNB
+MM1002 N_VGND_M1002_d N_A_M1002_g N_A_28_74#_M1002_s VNB NLOWVT L=0.15 W=0.42
++ AD=0.14805 AS=0.1113 PD=1.125 PS=1.37 NRD=15.708 NRS=0 M=1 R=2.8 SA=75000.2
++ SB=75001.1 A=0.063 P=1.14 MULT=1
+MM1001 N_A_288_74#_M1001_d N_A_28_74#_M1001_g N_VGND_M1002_d VNB NLOWVT L=0.18
++ W=0.42 AD=0.1113 AS=0.14805 PD=1.37 PS=1.125 NRD=0 NRS=105.708 M=1 R=2.33333
++ SA=90001 SB=90000.2 A=0.0756 P=1.2 MULT=1
+MM1003 N_VGND_M1003_d N_A_288_74#_M1003_g N_A_405_138#_M1003_s VNB NLOWVT L=0.18
++ W=0.42 AD=0.0831672 AS=0.2436 PD=0.78569 PS=2 NRD=40.86 NRS=37.14 M=1
++ R=2.33333 SA=90000.5 SB=90000.7 A=0.0756 P=1.2 MULT=1
+MM1004 N_X_M1004_d N_A_405_138#_M1004_g N_VGND_M1003_d VNB NLOWVT L=0.15 W=0.74
++ AD=0.1961 AS=0.146533 PD=2.01 PS=1.38431 NRD=0 NRS=0 M=1 R=4.93333 SA=75000.7
++ SB=75000.2 A=0.111 P=1.78 MULT=1
+MM1005 N_VPWR_M1005_d N_A_M1005_g N_A_28_74#_M1005_s VPB PSHORT L=0.15 W=0.42
++ AD=0.163415 AS=0.1176 PD=0.961268 PS=1.4 NRD=14.0658 NRS=7.0329 M=1 R=2.8
++ SA=75000.2 SB=75001.1 A=0.063 P=1.14 MULT=1
+MM1007 N_A_288_74#_M1007_d N_A_28_74#_M1007_g N_VPWR_M1005_d VPB PSHORT L=0.25
++ W=1 AD=0.26 AS=0.389085 PD=2.52 PS=2.28873 NRD=0 NRS=62.0353 M=1 R=4 SA=125001
++ SB=125000 A=0.25 P=2.5 MULT=1
+MM1006 N_VPWR_M1006_d N_A_288_74#_M1006_g N_A_405_138#_M1006_s VPB PSHORT L=0.25
++ W=1 AD=0.183019 AS=0.51 PD=1.39151 PS=3.02 NRD=13.2778 NRS=48.2453 M=1 R=4
++ SA=125000 SB=125001 A=0.25 P=2.5 MULT=1
+MM1000 N_X_M1000_d N_A_405_138#_M1000_g N_VPWR_M1006_d VPB PSHORT L=0.15 W=1.12
++ AD=0.3136 AS=0.204981 PD=2.8 PS=1.55849 NRD=2.6201 NRS=1.7533 M=1 R=7.46667
++ SA=75000.9 SB=75000.2 A=0.168 P=2.54 MULT=1
+DX8_noxref VNB VPB NWDIODE A=7.8492 P=12.16
 *
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
+.include "sky130_fd_sc_hs__dlygate4sd2_1.pxi.spice"
 *
-*     https://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*
-* SPDX-License-Identifier: Apache-2.0
-
-
-.subckt sky130_fd_sc_hs__dlygate4sd2_1 A VGND VNB VPB VPWR X
-M1000 X a_405_138# VPWR VPB pshort w=1.12e+06u l=150000u
-+  ad=3.136e+11p pd=2.8e+06u as=9.405e+11p ps=6.2e+06u
-M1001 a_288_74# a_28_74# VGND VNB nlowvt w=420000u l=180000u
-+  ad=1.113e+11p pd=1.37e+06u as=5.258e+11p ps=4.42e+06u
-M1002 VGND A a_28_74# VNB nlowvt w=420000u l=150000u
-+  ad=0p pd=0u as=1.113e+11p ps=1.37e+06u
-M1003 VGND a_288_74# a_405_138# VNB nlowvt w=420000u l=180000u
-+  ad=0p pd=0u as=2.436e+11p ps=2e+06u
-M1004 X a_405_138# VGND VNB nlowvt w=740000u l=150000u
-+  ad=1.961e+11p pd=2.01e+06u as=0p ps=0u
-M1005 VPWR A a_28_74# VPB pshort w=420000u l=150000u
-+  ad=0p pd=0u as=1.176e+11p ps=1.4e+06u
-M1006 VPWR a_288_74# a_405_138# VPB pshort w=1e+06u l=250000u
-+  ad=0p pd=0u as=5.1e+11p ps=3.02e+06u
-M1007 a_288_74# a_28_74# VPWR VPB pshort w=1e+06u l=250000u
-+  ad=2.6e+11p pd=2.52e+06u as=0p ps=0u
 .ends
+*
+*
