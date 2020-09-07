@@ -16,6 +16,6 @@
 
 
 .subckt sky130_fd_sc_hs__conb_1 VGND VNB VPB VPWR HI LO
-R0 HI VPWR short w=510000u l=45000u
-R1 VGND LO short w=510000u l=45000u
+X0 HI VPWR VNB short w=510000u l=45000u
+X1 VGND LO VNB short w=510000u l=45000u
 .ends
