@@ -51,7 +51,7 @@ module sky130_fd_sc_hs__dlxbn_1 (
     input  GATE_N;
     input  VPWR  ;
     input  VGND  ;
-    sky130_fd_sc_hs__dlxbn cell (
+    sky130_fd_sc_hs__dlxbn base (
         .Q(Q),
         .Q_N(Q_N),
         .D(D),
@@ -88,7 +88,7 @@ module sky130_fd_sc_hs__dlxbn_1 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__dlxbn cell (
+    sky130_fd_sc_hs__dlxbn base (
         .Q(Q),
         .Q_N(Q_N),
         .D(D),

@@ -51,7 +51,7 @@ module sky130_fd_sc_hs__ha_4 (
     input  B   ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__ha cell (
+    sky130_fd_sc_hs__ha base (
         .COUT(COUT),
         .SUM(SUM),
         .A(A),
@@ -88,7 +88,7 @@ module sky130_fd_sc_hs__ha_4 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__ha cell (
+    sky130_fd_sc_hs__ha base (
         .COUT(COUT),
         .SUM(SUM),
         .A(A),

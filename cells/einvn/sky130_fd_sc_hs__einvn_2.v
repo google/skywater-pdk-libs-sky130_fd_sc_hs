@@ -49,7 +49,7 @@ module sky130_fd_sc_hs__einvn_2 (
     output Z   ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__einvn cell (
+    sky130_fd_sc_hs__einvn base (
         .A(A),
         .TE_B(TE_B),
         .Z(Z),
@@ -83,7 +83,7 @@ module sky130_fd_sc_hs__einvn_2 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__einvn cell (
+    sky130_fd_sc_hs__einvn base (
         .A(A),
         .TE_B(TE_B),
         .Z(Z)

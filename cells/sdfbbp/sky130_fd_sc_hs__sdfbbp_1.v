@@ -60,7 +60,7 @@ module sky130_fd_sc_hs__sdfbbp_1 (
     input  RESET_B;
     input  VPWR   ;
     input  VGND   ;
-    sky130_fd_sc_hs__sdfbbp cell (
+    sky130_fd_sc_hs__sdfbbp base (
         .Q(Q),
         .Q_N(Q_N),
         .D(D),
@@ -109,7 +109,7 @@ module sky130_fd_sc_hs__sdfbbp_1 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__sdfbbp cell (
+    sky130_fd_sc_hs__sdfbbp base (
         .Q(Q),
         .Q_N(Q_N),
         .D(D),

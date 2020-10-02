@@ -51,7 +51,7 @@ module sky130_fd_sc_hs__xor2_2 (
     input  B   ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__xor2 cell (
+    sky130_fd_sc_hs__xor2 base (
         .X(X),
         .A(A),
         .B(B),
@@ -85,7 +85,7 @@ module sky130_fd_sc_hs__xor2_2 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__xor2 cell (
+    sky130_fd_sc_hs__xor2 base (
         .X(X),
         .A(A),
         .B(B)

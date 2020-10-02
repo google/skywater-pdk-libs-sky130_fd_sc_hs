@@ -54,7 +54,7 @@ module sky130_fd_sc_hs__edfxbp_1 (
     input  DE  ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__edfxbp cell (
+    sky130_fd_sc_hs__edfxbp base (
         .Q(Q),
         .Q_N(Q_N),
         .CLK(CLK),
@@ -94,7 +94,7 @@ module sky130_fd_sc_hs__edfxbp_1 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__edfxbp cell (
+    sky130_fd_sc_hs__edfxbp base (
         .Q(Q),
         .Q_N(Q_N),
         .CLK(CLK),

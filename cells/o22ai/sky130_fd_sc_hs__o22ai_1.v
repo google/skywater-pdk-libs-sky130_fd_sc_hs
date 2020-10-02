@@ -55,7 +55,7 @@ module sky130_fd_sc_hs__o22ai_1 (
     input  B2  ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__o22ai cell (
+    sky130_fd_sc_hs__o22ai base (
         .Y(Y),
         .A1(A1),
         .A2(A2),
@@ -95,7 +95,7 @@ module sky130_fd_sc_hs__o22ai_1 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__o22ai cell (
+    sky130_fd_sc_hs__o22ai base (
         .Y(Y),
         .A1(A1),
         .A2(A2),

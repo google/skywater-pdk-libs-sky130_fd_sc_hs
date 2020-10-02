@@ -51,7 +51,7 @@ module sky130_fd_sc_hs__mux2i_1 (
     input  S   ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__mux2i cell (
+    sky130_fd_sc_hs__mux2i base (
         .Y(Y),
         .A0(A0),
         .A1(A1),
@@ -88,7 +88,7 @@ module sky130_fd_sc_hs__mux2i_1 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__mux2i cell (
+    sky130_fd_sc_hs__mux2i base (
         .Y(Y),
         .A0(A0),
         .A1(A1),

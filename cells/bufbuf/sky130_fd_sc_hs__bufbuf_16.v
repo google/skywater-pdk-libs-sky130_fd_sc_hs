@@ -47,7 +47,7 @@ module sky130_fd_sc_hs__bufbuf_16 (
     input  A   ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__bufbuf cell (
+    sky130_fd_sc_hs__bufbuf base (
         .X(X),
         .A(A),
         .VPWR(VPWR),
@@ -78,7 +78,7 @@ module sky130_fd_sc_hs__bufbuf_16 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__bufbuf cell (
+    sky130_fd_sc_hs__bufbuf base (
         .X(X),
         .A(A)
     );

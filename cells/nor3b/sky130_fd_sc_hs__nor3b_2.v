@@ -53,7 +53,7 @@ module sky130_fd_sc_hs__nor3b_2 (
     input  C_N ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__nor3b cell (
+    sky130_fd_sc_hs__nor3b base (
         .Y(Y),
         .A(A),
         .B(B),
@@ -90,7 +90,7 @@ module sky130_fd_sc_hs__nor3b_2 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__nor3b cell (
+    sky130_fd_sc_hs__nor3b base (
         .Y(Y),
         .A(A),
         .B(B),

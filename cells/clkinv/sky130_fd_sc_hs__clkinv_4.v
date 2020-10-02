@@ -47,7 +47,7 @@ module sky130_fd_sc_hs__clkinv_4 (
     input  A   ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__clkinv cell (
+    sky130_fd_sc_hs__clkinv base (
         .Y(Y),
         .A(A),
         .VPWR(VPWR),
@@ -78,7 +78,7 @@ module sky130_fd_sc_hs__clkinv_4 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__clkinv cell (
+    sky130_fd_sc_hs__clkinv base (
         .Y(Y),
         .A(A)
     );

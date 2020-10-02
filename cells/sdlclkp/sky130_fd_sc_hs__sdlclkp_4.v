@@ -51,7 +51,7 @@ module sky130_fd_sc_hs__sdlclkp_4 (
     input  SCE ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__sdlclkp cell (
+    sky130_fd_sc_hs__sdlclkp base (
         .GCLK(GCLK),
         .GATE(GATE),
         .CLK(CLK),
@@ -88,7 +88,7 @@ module sky130_fd_sc_hs__sdlclkp_4 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__sdlclkp cell (
+    sky130_fd_sc_hs__sdlclkp base (
         .GCLK(GCLK),
         .GATE(GATE),
         .CLK(CLK),

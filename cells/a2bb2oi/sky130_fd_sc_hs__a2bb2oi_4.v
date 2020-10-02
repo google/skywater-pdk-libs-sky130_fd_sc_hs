@@ -56,7 +56,7 @@ module sky130_fd_sc_hs__a2bb2oi_4 (
     input  B2  ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__a2bb2oi cell (
+    sky130_fd_sc_hs__a2bb2oi base (
         .Y(Y),
         .A1_N(A1_N),
         .A2_N(A2_N),
@@ -96,7 +96,7 @@ module sky130_fd_sc_hs__a2bb2oi_4 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__a2bb2oi cell (
+    sky130_fd_sc_hs__a2bb2oi base (
         .Y(Y),
         .A1_N(A1_N),
         .A2_N(A2_N),
