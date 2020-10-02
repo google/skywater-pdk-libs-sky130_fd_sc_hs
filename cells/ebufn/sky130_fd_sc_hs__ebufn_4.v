@@ -49,7 +49,7 @@ module sky130_fd_sc_hs__ebufn_4 (
     output Z   ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__ebufn cell (
+    sky130_fd_sc_hs__ebufn base (
         .A(A),
         .TE_B(TE_B),
         .Z(Z),
@@ -83,7 +83,7 @@ module sky130_fd_sc_hs__ebufn_4 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__ebufn cell (
+    sky130_fd_sc_hs__ebufn base (
         .A(A),
         .TE_B(TE_B),
         .Z(Z)

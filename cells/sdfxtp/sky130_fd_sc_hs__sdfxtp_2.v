@@ -53,7 +53,7 @@ module sky130_fd_sc_hs__sdfxtp_2 (
     input  SCE ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__sdfxtp cell (
+    sky130_fd_sc_hs__sdfxtp base (
         .CLK(CLK),
         .D(D),
         .Q(Q),
@@ -93,7 +93,7 @@ module sky130_fd_sc_hs__sdfxtp_2 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__sdfxtp cell (
+    sky130_fd_sc_hs__sdfxtp base (
         .CLK(CLK),
         .D(D),
         .Q(Q),

@@ -51,7 +51,7 @@ module sky130_fd_sc_hs__xnor3_4 (
     input  C   ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__xnor3 cell (
+    sky130_fd_sc_hs__xnor3 base (
         .X(X),
         .A(A),
         .B(B),
@@ -88,7 +88,7 @@ module sky130_fd_sc_hs__xnor3_4 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__xnor3 cell (
+    sky130_fd_sc_hs__xnor3 base (
         .X(X),
         .A(A),
         .B(B),

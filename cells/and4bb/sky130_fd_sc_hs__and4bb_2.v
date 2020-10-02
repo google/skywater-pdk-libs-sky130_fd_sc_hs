@@ -53,7 +53,7 @@ module sky130_fd_sc_hs__and4bb_2 (
     input  D   ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__and4bb cell (
+    sky130_fd_sc_hs__and4bb base (
         .X(X),
         .A_N(A_N),
         .B_N(B_N),
@@ -93,7 +93,7 @@ module sky130_fd_sc_hs__and4bb_2 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__and4bb cell (
+    sky130_fd_sc_hs__and4bb base (
         .X(X),
         .A_N(A_N),
         .B_N(B_N),

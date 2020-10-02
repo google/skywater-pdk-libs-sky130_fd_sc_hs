@@ -47,7 +47,7 @@ module sky130_fd_sc_hs__dlygate4sd1_1 (
     input  A   ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__dlygate4sd1 cell (
+    sky130_fd_sc_hs__dlygate4sd1 base (
         .X(X),
         .A(A),
         .VPWR(VPWR),
@@ -78,7 +78,7 @@ module sky130_fd_sc_hs__dlygate4sd1_1 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__dlygate4sd1 cell (
+    sky130_fd_sc_hs__dlygate4sd1 base (
         .X(X),
         .A(A)
     );

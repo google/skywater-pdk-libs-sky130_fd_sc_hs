@@ -51,7 +51,7 @@ module sky130_fd_sc_hs__nand3b_2 (
     input  C   ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__nand3b cell (
+    sky130_fd_sc_hs__nand3b base (
         .Y(Y),
         .A_N(A_N),
         .B(B),
@@ -88,7 +88,7 @@ module sky130_fd_sc_hs__nand3b_2 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__nand3b cell (
+    sky130_fd_sc_hs__nand3b base (
         .Y(Y),
         .A_N(A_N),
         .B(B),

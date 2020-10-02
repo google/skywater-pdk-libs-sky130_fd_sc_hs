@@ -53,7 +53,7 @@ module sky130_fd_sc_hs__dfsbp_2 (
     input  SET_B;
     input  VPWR ;
     input  VGND ;
-    sky130_fd_sc_hs__dfsbp cell (
+    sky130_fd_sc_hs__dfsbp base (
         .CLK(CLK),
         .D(D),
         .Q(Q),
@@ -93,7 +93,7 @@ module sky130_fd_sc_hs__dfsbp_2 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__dfsbp cell (
+    sky130_fd_sc_hs__dfsbp base (
         .CLK(CLK),
         .D(D),
         .Q(Q),

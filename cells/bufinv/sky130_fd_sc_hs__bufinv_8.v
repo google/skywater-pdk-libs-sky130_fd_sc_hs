@@ -47,7 +47,7 @@ module sky130_fd_sc_hs__bufinv_8 (
     input  A   ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__bufinv cell (
+    sky130_fd_sc_hs__bufinv base (
         .Y(Y),
         .A(A),
         .VPWR(VPWR),
@@ -78,7 +78,7 @@ module sky130_fd_sc_hs__bufinv_8 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__bufinv cell (
+    sky130_fd_sc_hs__bufinv base (
         .Y(Y),
         .A(A)
     );

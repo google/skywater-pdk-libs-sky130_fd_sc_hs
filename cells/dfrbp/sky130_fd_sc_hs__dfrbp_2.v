@@ -53,7 +53,7 @@ module sky130_fd_sc_hs__dfrbp_2 (
     output Q_N    ;
     input  VPWR   ;
     input  VGND   ;
-    sky130_fd_sc_hs__dfrbp cell (
+    sky130_fd_sc_hs__dfrbp base (
         .RESET_B(RESET_B),
         .CLK(CLK),
         .D(D),
@@ -93,7 +93,7 @@ module sky130_fd_sc_hs__dfrbp_2 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__dfrbp cell (
+    sky130_fd_sc_hs__dfrbp base (
         .RESET_B(RESET_B),
         .CLK(CLK),
         .D(D),

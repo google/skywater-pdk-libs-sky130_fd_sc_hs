@@ -55,7 +55,7 @@ module sky130_fd_sc_hs__o31a_4 (
     input  B1  ;
     input  VPWR;
     input  VGND;
-    sky130_fd_sc_hs__o31a cell (
+    sky130_fd_sc_hs__o31a base (
         .X(X),
         .A1(A1),
         .A2(A2),
@@ -95,7 +95,7 @@ module sky130_fd_sc_hs__o31a_4 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__o31a cell (
+    sky130_fd_sc_hs__o31a base (
         .X(X),
         .A1(A1),
         .A2(A2),

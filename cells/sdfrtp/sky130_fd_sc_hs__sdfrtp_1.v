@@ -56,7 +56,7 @@ module sky130_fd_sc_hs__sdfrtp_1 (
     input  SCE    ;
     input  VPWR   ;
     input  VGND   ;
-    sky130_fd_sc_hs__sdfrtp cell (
+    sky130_fd_sc_hs__sdfrtp base (
         .RESET_B(RESET_B),
         .CLK(CLK),
         .D(D),
@@ -99,7 +99,7 @@ module sky130_fd_sc_hs__sdfrtp_1 (
     supply1 VPWR;
     supply0 VGND;
 
-    sky130_fd_sc_hs__sdfrtp cell (
+    sky130_fd_sc_hs__sdfrtp base (
         .RESET_B(RESET_B),
         .CLK(CLK),
         .D(D),
