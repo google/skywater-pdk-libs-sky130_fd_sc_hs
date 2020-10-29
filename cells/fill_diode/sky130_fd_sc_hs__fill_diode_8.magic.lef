@@ -24,18 +24,21 @@ MACRO sky130_fd_sc_hs__fill_diode_8
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   PIN VNB
+    DIRECTION INPUT ;
     PORT
       LAYER pwell ;
         RECT 0.000000 0.000000 3.840000 0.245000 ;
     END
   END VNB
   PIN VPB
+    DIRECTION INPUT ;
     PORT
       LAYER nwell ;
         RECT -0.190000 1.660000 4.030000 3.520000 ;
     END
   END VPB
   PIN VGND
+    DIRECTION INPUT ;
     USE GROUND ;
     PORT
       LAYER met1 ;
@@ -43,6 +46,7 @@ MACRO sky130_fd_sc_hs__fill_diode_8
     END
   END VGND
   PIN VPWR
+    DIRECTION INPUT ;
     USE POWER ;
     PORT
       LAYER met1 ;
