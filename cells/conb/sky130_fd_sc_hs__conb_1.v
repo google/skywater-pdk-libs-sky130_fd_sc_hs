@@ -63,16 +63,12 @@ endmodule
 
 `celldefine
 module sky130_fd_sc_hs__conb_1 (
-    HI  ,
-    LO  ,
-    VPWR,
-    VGND
+    HI,
+    LO
 );
 
-    output HI  ;
-    output LO  ;
-    input  VPWR;
-    input  VGND;
+    output HI;
+    output LO;
 
     // Voltage supply signals
     supply1 VPWR;

@@ -70,20 +70,16 @@ endmodule
 
 `celldefine
 module sky130_fd_sc_hs__edfxtp_1 (
-    Q   ,
-    CLK ,
-    D   ,
-    DE  ,
-    VPWR,
-    VGND
+    Q  ,
+    CLK,
+    D  ,
+    DE
 );
 
-    output Q   ;
-    input  CLK ;
-    input  D   ;
-    input  DE  ;
-    input  VPWR;
-    input  VGND;
+    output Q  ;
+    input  CLK;
+    input  D  ;
+    input  DE ;
 
     // Voltage supply signals
     supply1 VPWR;

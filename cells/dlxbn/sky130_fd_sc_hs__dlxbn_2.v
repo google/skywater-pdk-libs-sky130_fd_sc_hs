@@ -72,17 +72,13 @@ module sky130_fd_sc_hs__dlxbn_2 (
     Q     ,
     Q_N   ,
     D     ,
-    GATE_N,
-    VPWR  ,
-    VGND
+    GATE_N
 );
 
     output Q     ;
     output Q_N   ;
     input  D     ;
     input  GATE_N;
-    input  VPWR  ;
-    input  VGND  ;
 
     // Voltage supply signals
     supply1 VPWR;

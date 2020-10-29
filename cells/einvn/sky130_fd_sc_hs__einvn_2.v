@@ -68,16 +68,12 @@ endmodule
 module sky130_fd_sc_hs__einvn_2 (
     A   ,
     TE_B,
-    Z   ,
-    VPWR,
-    VGND
+    Z
 );
 
     input  A   ;
     input  TE_B;
     output Z   ;
-    input  VPWR;
-    input  VGND;
 
     // Voltage supply signals
     supply1 VPWR;

@@ -76,9 +76,7 @@ module sky130_fd_sc_hs__dfsbp_2 (
     D    ,
     Q    ,
     Q_N  ,
-    SET_B,
-    VPWR ,
-    VGND
+    SET_B
 );
 
     input  CLK  ;
@@ -86,8 +84,6 @@ module sky130_fd_sc_hs__dfsbp_2 (
     output Q    ;
     output Q_N  ;
     input  SET_B;
-    input  VPWR ;
-    input  VGND ;
 
     // Voltage supply signals
     supply1 VPWR;

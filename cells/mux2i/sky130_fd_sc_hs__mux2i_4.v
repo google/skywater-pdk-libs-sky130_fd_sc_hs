@@ -69,20 +69,16 @@ endmodule
 
 `celldefine
 module sky130_fd_sc_hs__mux2i_4 (
-    Y   ,
-    A0  ,
-    A1  ,
-    S   ,
-    VPWR,
-    VGND
+    Y ,
+    A0,
+    A1,
+    S
 );
 
-    output Y   ;
-    input  A0  ;
-    input  A1  ;
-    input  S   ;
-    input  VPWR;
-    input  VGND;
+    output Y ;
+    input  A0;
+    input  A1;
+    input  S ;
 
     // Voltage supply signals
     supply1 VPWR;

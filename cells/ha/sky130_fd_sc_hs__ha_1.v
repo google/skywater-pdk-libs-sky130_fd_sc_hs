@@ -72,17 +72,13 @@ module sky130_fd_sc_hs__ha_1 (
     COUT,
     SUM ,
     A   ,
-    B   ,
-    VPWR,
-    VGND
+    B
 );
 
     output COUT;
     output SUM ;
     input  A   ;
     input  B   ;
-    input  VPWR;
-    input  VGND;
 
     // Voltage supply signals
     supply1 VPWR;
