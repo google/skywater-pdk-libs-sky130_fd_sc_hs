@@ -62,18 +62,7 @@ endmodule
 /*********************************************************/
 
 `celldefine
-module sky130_fd_sc_hs__fill_diode_8 (
-    VPWR,
-    VGND,
-    VPB ,
-    VNB
-);
-
-    input VPWR;
-    input VGND;
-    input VPB ;
-    input VNB ;
-
+module sky130_fd_sc_hs__fill_diode_8 ();
     // Voltage supply signals
     supply1 VPWR;
     supply0 VGND;

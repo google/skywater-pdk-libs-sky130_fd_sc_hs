@@ -85,9 +85,7 @@ module sky130_fd_sc_hs__sdfsbp_2 (
     Q_N  ,
     SCD  ,
     SCE  ,
-    SET_B,
-    VPWR ,
-    VGND
+    SET_B
 );
 
     input  CLK  ;
@@ -97,8 +95,6 @@ module sky130_fd_sc_hs__sdfsbp_2 (
     input  SCD  ;
     input  SCE  ;
     input  SET_B;
-    input  VPWR ;
-    input  VGND ;
 
     // Voltage supply signals
     supply1 VPWR;

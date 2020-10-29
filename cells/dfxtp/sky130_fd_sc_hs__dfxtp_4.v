@@ -66,18 +66,14 @@ endmodule
 
 `celldefine
 module sky130_fd_sc_hs__dfxtp_4 (
-    CLK ,
-    D   ,
-    Q   ,
-    VPWR,
-    VGND
+    CLK,
+    D  ,
+    Q
 );
 
-    input  CLK ;
-    input  D   ;
-    output Q   ;
-    input  VPWR;
-    input  VGND;
+    input  CLK;
+    input  D  ;
+    output Q  ;
 
     // Voltage supply signals
     supply1 VPWR;

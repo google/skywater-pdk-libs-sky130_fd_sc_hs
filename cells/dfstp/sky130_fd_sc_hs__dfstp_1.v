@@ -72,17 +72,13 @@ module sky130_fd_sc_hs__dfstp_1 (
     CLK  ,
     D    ,
     Q    ,
-    SET_B,
-    VPWR ,
-    VGND
+    SET_B
 );
 
     input  CLK  ;
     input  D    ;
     output Q    ;
     input  SET_B;
-    input  VPWR ;
-    input  VGND ;
 
     // Voltage supply signals
     supply1 VPWR;

@@ -72,17 +72,13 @@ module sky130_fd_sc_hs__sdlclkp_4 (
     GCLK,
     GATE,
     CLK ,
-    SCE ,
-    VPWR,
-    VGND
+    SCE
 );
 
     output GCLK;
     input  GATE;
     input  CLK ;
     input  SCE ;
-    input  VPWR;
-    input  VGND;
 
     // Voltage supply signals
     supply1 VPWR;

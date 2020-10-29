@@ -76,9 +76,7 @@ module sky130_fd_sc_hs__fah_4 (
     SUM ,
     A   ,
     B   ,
-    CI  ,
-    VPWR,
-    VGND
+    CI
 );
 
     output COUT;
@@ -86,8 +84,6 @@ module sky130_fd_sc_hs__fah_4 (
     input  A   ;
     input  B   ;
     input  CI  ;
-    input  VPWR;
-    input  VGND;
 
     // Voltage supply signals
     supply1 VPWR;

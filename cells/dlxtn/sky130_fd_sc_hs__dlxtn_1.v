@@ -68,16 +68,12 @@ endmodule
 module sky130_fd_sc_hs__dlxtn_1 (
     Q     ,
     D     ,
-    GATE_N,
-    VPWR  ,
-    VGND
+    GATE_N
 );
 
     output Q     ;
     input  D     ;
     input  GATE_N;
-    input  VPWR  ;
-    input  VGND  ;
 
     // Voltage supply signals
     supply1 VPWR;

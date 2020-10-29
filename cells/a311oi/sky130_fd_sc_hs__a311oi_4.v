@@ -77,24 +77,20 @@ endmodule
 
 `celldefine
 module sky130_fd_sc_hs__a311oi_4 (
-    Y   ,
-    A1  ,
-    A2  ,
-    A3  ,
-    B1  ,
-    C1  ,
-    VPWR,
-    VGND
+    Y ,
+    A1,
+    A2,
+    A3,
+    B1,
+    C1
 );
 
-    output Y   ;
-    input  A1  ;
-    input  A2  ;
-    input  A3  ;
-    input  B1  ;
-    input  C1  ;
-    input  VPWR;
-    input  VGND;
+    output Y ;
+    input  A1;
+    input  A2;
+    input  A3;
+    input  B1;
+    input  C1;
 
     // Voltage supply signals
     supply1 VPWR;

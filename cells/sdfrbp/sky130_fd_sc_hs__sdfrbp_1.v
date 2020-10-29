@@ -85,9 +85,7 @@ module sky130_fd_sc_hs__sdfrbp_1 (
     Q      ,
     Q_N    ,
     SCD    ,
-    SCE    ,
-    VPWR   ,
-    VGND
+    SCE
 );
 
     input  RESET_B;
@@ -97,8 +95,6 @@ module sky130_fd_sc_hs__sdfrbp_1 (
     output Q_N    ;
     input  SCD    ;
     input  SCE    ;
-    input  VPWR   ;
-    input  VGND   ;
 
     // Voltage supply signals
     supply1 VPWR;
