@@ -29,6 +29,7 @@ MACRO sky130_fd_sc_hs__diode_2
     ANTENNADIFFAREA  0.641700 ;
     ANTENNAGATEAREA  0.641700 ;
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER li1 ;
         RECT 0.095000 0.265000 0.865000 3.065000 ;
@@ -36,6 +37,7 @@ MACRO sky130_fd_sc_hs__diode_2
   END DIODE
   PIN VGND
     DIRECTION INOUT ;
+    SHAPE ABUTMENT ;
     USE GROUND ;
     PORT
       LAYER met1 ;
@@ -60,6 +62,7 @@ MACRO sky130_fd_sc_hs__diode_2
   END VPB
   PIN VPWR
     DIRECTION INOUT ;
+    SHAPE ABUTMENT ;
     USE POWER ;
     PORT
       LAYER met1 ;

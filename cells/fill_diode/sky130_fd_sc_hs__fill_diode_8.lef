@@ -14,19 +14,20 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-VERSION 5.5 ;
-NAMESCASESENSITIVE ON ;
-BUSBITCHARS "[]" ;
-DIVIDERCHAR "/" ;
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
 MACRO sky130_fd_sc_hs__fill_diode_8
-  CLASS CORE SPACER ;
-  SOURCE USER ;
+  CLASS SPACER ;
+  FOREIGN scs8hs_fill_diode_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN VGND
     DIRECTION INOUT ;
+    SHAPE ABUTMENT ;
     USE GROUND ;
     PORT
       LAYER met1 ;
@@ -37,20 +38,21 @@ MACRO sky130_fd_sc_hs__fill_diode_8
     DIRECTION INOUT ;
     USE GROUND ;
     PORT
-      LAYER met1 ;
-        RECT 0.000000 0.000000 0.250000 0.250000 ;
+      LAYER pwell ;
+        RECT 0.000000 0.000000 3.840000 0.245000 ;
     END
   END VNB
   PIN VPB
     DIRECTION INOUT ;
     USE POWER ;
     PORT
-      LAYER met1 ;
-        RECT 0.000000 3.080000 0.250000 3.330000 ;
+      LAYER nwell ;
+        RECT -0.190000 1.660000 4.030000 3.520000 ;
     END
   END VPB
   PIN VPWR
     DIRECTION INOUT ;
+    SHAPE ABUTMENT ;
     USE POWER ;
     PORT
       LAYER met1 ;

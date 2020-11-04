@@ -19,7 +19,7 @@ VERSION 5.7 ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
 MACRO sky130_fd_sc_hs__fill_diode_4
-  CLASS CORE SPACER ;
+  CLASS SPACER ;
   FOREIGN sky130_fd_sc_hs__fill_diode_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.920000 BY  3.330000 ;
@@ -27,6 +27,7 @@ MACRO sky130_fd_sc_hs__fill_diode_4
   SITE unit ;
   PIN VGND
     DIRECTION INOUT ;
+    SHAPE ABUTMENT ;
     USE GROUND ;
     PORT
       LAYER met1 ;
@@ -51,6 +52,7 @@ MACRO sky130_fd_sc_hs__fill_diode_4
   END VPB
   PIN VPWR
     DIRECTION INOUT ;
+    SHAPE ABUTMENT ;
     USE POWER ;
     PORT
       LAYER met1 ;
